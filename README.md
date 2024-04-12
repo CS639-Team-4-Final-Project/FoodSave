@@ -23,16 +23,16 @@ The primary aim of the Food Save app is to empower students to reduce food waste
 
 4. **Rewards**: The app will incorporate elements, such as points, and badges, to encourage students to engage with the app and track their progress in reducing food waste.
 
-### Relevance to Student Well-Being and Welfare
+### Relevance to Student Well-Being and Welfare:
 The Food Save app directly addresses student well-being and welfare in the following ways:
 
-1.⁠ **⁠Financial Stability**: By helping students reduce food waste and save money, the app can contribute to their financial well-being and alleviate the stress associated with food insecurity.
+1. **⁠Financial Stability**: By helping students reduce food waste and save money, the app can contribute to their financial well-being and alleviate the stress associated with food insecurity.
 
-2.⁠ **⁠Sustainability and Environmental Impact**: The app's focus on reducing food waste promotes sustainable practices and environmental stewardship, which can positively impact student mental health and overall well-being.
+2. **⁠Sustainability and Environmental Impact**: The app's focus on reducing food waste promotes sustainable practices and environmental stewardship, which can positively impact student mental health and overall well-being.
 
-3.⁠ **⁠Community Engagement**: The food donation and sharing features of the app encourage students to engage with their local community, fostering a sense of social responsibility and connection.
+3. **⁠Community Engagement**: The food donation and sharing features of the app encourage students to engage with their local community, fostering a sense of social responsibility and connection.
 
-4.⁠ **⁠Healthy Habits**: The meal planning and recipe suggestions within the app can help students develop healthier eating habits, which are essential for their physical and mental well-being.
+4. **⁠Healthy Habits**: The meal planning and recipe suggestions within the app can help students develop healthier eating habits, which are essential for their physical and mental well-being.
 
 
 In conclusion, the proposed Food Save app aligns with the topic of student well-being and welfare by addressing the financial, environmental, and social aspects of food waste. By empowering students to reduce food waste, the app can positively impact their overall well-being and contribute to a more sustainable campus community.
