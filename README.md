@@ -15,11 +15,11 @@ The primary aim of the Food Save app is to empower students to reduce food waste
 
 ### Key Functionality:
 
-1. ** Food Inventory Management **: The app will allow users to track the food items they have at home, set expiration reminders, and receive personalized recommendations to use up perishable items before they spoil.
+1. **Food Inventory Management**: The app will allow users to track the food items they have at home, set expiration reminders, and receive personalized recommendations to use up perishable items before they spoil.
 
-2. ** Food Donation and Sharing **: The app will connect students with local food banks, shelters, or campus organizations that accept food donations. Users can also share surplus food with their peers through a built-in food-sharing platform.
+2. **Food Donation and Sharing**: The app will connect students with local food banks, shelters, or campus organizations that accept food donations. Users can also share surplus food with their peers through a built-in food-sharing platform.
 
-3. ** Educational Resources **: The app will offer educational content and tips on sustainable food practices, food storage, and waste reduction. This will help students develop better habits and raise awareness about the importance of reducing food waste.
+3. **Educational Resources**: The app will offer educational content and tips on sustainable food practices, food storage, and waste reduction. This will help students develop better habits and raise awareness about the importance of reducing food waste.
 
-4. ** Rewards **: The app will incorporate elements, such as points, and badges, to encourage students to engage with the app and track their progress in reducing food waste.
+4. **Rewards**: The app will incorporate elements, such as points, and badges, to encourage students to engage with the app and track their progress in reducing food waste.
 
