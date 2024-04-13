@@ -3,7 +3,9 @@
 ## Team Members:
 1. Charitha Gangaraju
 2. Jitendra Rawat
-3. Prithvi Karkera
+3. Niyati Trivedi
+4. Prithvi Karkera
+
 
 ## Project Idea Proposal
 
@@ -36,6 +38,37 @@ The Food Save app directly addresses student well-being and welfare in the follo
 
 
 In conclusion, the proposed Food Save app aligns with the topic of student well-being and welfare by addressing the financial, environmental, and social aspects of food waste. By empowering students to reduce food waste, the app can positively impact their overall well-being and contribute to a more sustainable campus community.
+
+Niyati:
+
+## Importance of the App:
+
+1. Environmental Impact:
+   - Food waste accounts for about 1.3 billion tons per year globally, which is roughly one-third of all food produced.[1]
+   - The production of wasted food generates greenhouse gas emissions equivalent to 36.2 million cars in the US alone.[1]
+   - If everyone could master food waste management, it would help eliminate 8% of all anthropogenic greenhouse gas emissions.[1]
+
+2. Financial Savings:
+   - Food prices increased by 9.9% in 2022, making food waste management apps a real economical solution.[1]
+   - The average restaurant throws away 4-10% of the food they purchase, which translates to thousands of dollars per year.[2]
+   - By reducing food waste, restaurants can lower their food costs, increase profit margins, and save on other resources like labor, energy, and waste disposal fees.[2]
+
+3. Social Impact:
+   - Food waste management apps allow users to share surplus food with their neighbors or donate it to those in need, building social connections.[1]
+   - Some apps, like Olio, are nonprofit organizations with a mission to reduce food waste and address food insecurity.[3]
+
+4. Behavioral Change:
+   - Food waste management apps can change the culture of planning, consuming, and disposing of food, encouraging users to be more thoughtful about their purchases and spending.[1]
+   - By sharing their experience with friends and on social networks, users can provoke changes in their community's attitudes towards food waste.[1]
+
+In summary, the food waste management app is crucial for addressing the significant environmental, financial, and social impacts of food waste, while also promoting behavioral change and improving the user experience.
+
+Citations:
+[1] https://www.softermii.com/blog/food-waste-management-app-development-how-to-create-solution-similar-to-too-good-to-go
+[2] https://www.linkedin.com/advice/3/what-benefits-using-food-waste-management
+[3] https://www.zerowasteman.com/food-waste-apps/ 
+[4] https://commercialwaste.trade/mobile-app-helping-reduce-food-waste/ 
+[5] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9482070/ 
 
 
 ## Comparison to Similar Solutions
