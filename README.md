@@ -39,8 +39,6 @@ The Food Save app directly addresses student well-being and welfare in the follo
 
 In conclusion, the proposed Food Save app aligns with the topic of student well-being and welfare by addressing the financial, environmental, and social aspects of food waste. By empowering students to reduce food waste, the app can positively impact their overall well-being and contribute to a more sustainable campus community.
 
-Niyati:
-
 ### Importance of the App:
 
 1. **Environmental Impact:**
