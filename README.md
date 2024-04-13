@@ -71,7 +71,7 @@ Citations:
 5.  tps://www.ncbi.nlm.nih.gov/pmc/articles/PMC9482070/ 
 
 
-## Comparison to Similar Solutions
+### Comparison to Similar Solutions
 
 Here are three similar food waste management apps available on the Google Play Store, along with a brief description and how they compare to the proposed solution:
 
@@ -99,7 +99,7 @@ Screenshots of the three similar solutions:
 ![image](https://github.com/CS639-Team-4-Final-Project/FoodSave/assets/61057243/600b2670-ebd8-4332-83b3-2fd2fb3fd9ac)
 
 
-## Technologies and APIs
+### Technologies and APIs
 
 To develop the proposed food waste management app, the following technologies and APIs may be utilized:
 
