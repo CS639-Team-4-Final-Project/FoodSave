@@ -68,7 +68,7 @@ Citations:
 2.  https://www.linkedin.com/advice/3/what-benefits-using-food-waste-management
 3.  https://www.zerowasteman.com/food-waste-apps/
 4.  https://commercialwaste.trade/mobile-app-helping-reduce-food-waste/
-5.  tps://www.ncbi.nlm.nih.gov/pmc/articles/PMC9482070/ 
+5.  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9482070/ 
 
 
 ### Comparison to Similar Solutions
