@@ -8,8 +8,8 @@
 3. Niyati Trivedi
 4. Prithvi Karkera
 
-
-## Project Idea Proposal
+## Project Idea Proposal and Research
+The data presented below is also available in the doc file: https://drive.google.com/file/d/1I3AmVcLQtreUVO3cuJ6B18e13ktVe__b/view?usp=sharing 
 
 ### Overview:
 Food waste is a significant issue that not only harms the environment but also impacts the financial well-being of students. Many students struggle with food insecurity, and reducing food waste can help alleviate this problem while also promoting sustainable practices. The proposed "Food Save" Android app aims to address this challenge and support student well-being.
