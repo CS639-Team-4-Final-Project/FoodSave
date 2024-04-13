@@ -56,13 +56,13 @@ Here are three similar food waste management apps available on the Google Play S
 
 Screenshots of the three similar solutions:
 
-Olio App Screenshot
+**Olio App Screenshot**
 ![image](https://github.com/CS639-Team-4-Final-Project/FoodSave/assets/61057243/e71bbe07-3271-47a4-8d54-237e33528066)
 
-Too Good To Go App Screenshot
+**Too Good To Go App Screenshot**
 ![image](https://github.com/CS639-Team-4-Final-Project/FoodSave/assets/61057243/0d8e8b08-9cce-426b-9195-ec376b0f6ecc)
 
-Karma App Screenshot
+**Karma App Screenshot**
 ![image](https://github.com/CS639-Team-4-Final-Project/FoodSave/assets/61057243/600b2670-ebd8-4332-83b3-2fd2fb3fd9ac)
 
 
