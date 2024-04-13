@@ -1,4 +1,6 @@
-# FoodSave
+# Team 4 - Food Waste Management
+
+# App: FoodSave
 
 ## Team Members:
 1. Charitha Gangaraju
