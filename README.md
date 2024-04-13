@@ -36,3 +36,53 @@ The Food Save app directly addresses student well-being and welfare in the follo
 
 
 In conclusion, the proposed Food Save app aligns with the topic of student well-being and welfare by addressing the financial, environmental, and social aspects of food waste. By empowering students to reduce food waste, the app can positively impact their overall well-being and contribute to a more sustainable campus community.
+
+
+## Comparison to Similar Solutions
+
+Here are three similar food waste management apps available on the Google Play Store, along with a brief description and how they compare to the proposed solution:
+
+1. *Olio*
+   - Description: Olio is a food-sharing app that connects neighbors to share surplus food and other items for free.
+   - Comparison: While Olio focuses on food sharing and donation, the proposed app has a broader scope, including features for inventory management, meal planning, and campus-specific integration to address student well-being.
+
+2. *Too Good To Go*
+   - Description: Too Good To Go is an app that allows users to purchase discounted "magic bags" of unsold food from restaurants, cafes, and grocery stores.
+   - Comparison: The proposed app includes the discounted food purchase feature, but also incorporates additional functionalities like recipe suggestions, expiration alerts, and gamification to promote sustainable food practices among students.
+
+3. *Karma*
+   - Description: Karma is an app that connects users to restaurants, bakeries, and cafes to purchase discounted surplus food.
+   - Comparison: Similar to Too Good To Go, Karma focuses on discounted food purchases, while the proposed app has a more comprehensive approach, including features to address the financial, social, and environmental aspects of food waste in the context of student well-being.
+
+Screenshots of the three similar solutions:
+
+Olio App Screenshot
+![image](https://github.com/CS639-Team-4-Final-Project/FoodSave/assets/61057243/e71bbe07-3271-47a4-8d54-237e33528066)
+
+Too Good To Go App Screenshot
+![image](https://github.com/CS639-Team-4-Final-Project/FoodSave/assets/61057243/0d8e8b08-9cce-426b-9195-ec376b0f6ecc)
+
+Karma App Screenshot
+![image](https://github.com/CS639-Team-4-Final-Project/FoodSave/assets/61057243/600b2670-ebd8-4332-83b3-2fd2fb3fd9ac)
+
+
+## Technologies and APIs
+
+To develop the proposed food waste management app, the following technologies and APIs may be utilized:
+
+1. *Mobile App Development Frameworks*: 
+   - Android: Android Studio, Kotlin
+
+2. *Third-Party APIs and Services*:
+   - Google Maps API for location-based features.
+   - Firebase for data storage.
+   - Integration with university dining services and food donation organizations
+
+By leveraging these technologies and APIs, the proposed food waste management app can provide a comprehensive and innovative solution to address the issue of food waste while promoting student well-being and welfare.
+
+Citations:
+[1] https://www.wdptechnologies.com/food-waste-management-app-development/
+[2] https://ripenapps.com/blog/how-can-mobile-apps-solve-challenges-in-food-waste-management/
+[3] https://www.softermii.com/blog/food-waste-management-app-development-how-to-create-solution-similar-to-too-good-to-go
+[4] https://www.decipherzone.com/blog-detail/food-waste-management-app-development
+[5] https://www.emizentech.com/blog/food-waste-management-app-development.html
