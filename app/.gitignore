@@ -1,10 +1,1 @@
 /build
-
-# Ignore Gradle files
-.gradle/
-
-# Ignore IntelliJ IDEA files
-.idea/
-
-# Ignore local properties file
-local.properties
