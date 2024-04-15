@@ -4,8 +4,14 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Sign Up</string>
     <string name="second_fragment_label">Login</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="next">Login</string>
+    <string name="previous">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="not_register">Already Registered?</string>
+    <string name="register">Register</string>
 
     <string name="lorem_ipsum">
         Welcome to Food Save!

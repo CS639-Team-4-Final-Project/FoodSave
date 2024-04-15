@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "88469609924",
+    "project_id": "foodsave-2414c",
+    "storage_bucket": "foodsave-2414c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88469609924:android:fa827c17db63d6a4e25891",
+        "android_client_info": {
+          "package_name": "com.example.foodsave"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVjdKsnbQbEkNofJ2_a-tu4H4Ql3DhJa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
