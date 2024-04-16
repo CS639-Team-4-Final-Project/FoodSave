@@ -83,7 +83,8 @@
             android:layout_height="50dp"
             android:layout_margin="20dp"
             android:text="Login"
-            android:textColor="@android:color/white"
+            android:backgroundTint="@color/register"
+            android:textColor="@android:color/black"
             android:textSize="16sp" />
 
     </LinearLayout>

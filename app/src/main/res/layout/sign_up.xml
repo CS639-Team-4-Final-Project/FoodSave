@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/background2"
     android:padding="8dp"
     android:gravity="center"
     >
@@ -146,7 +146,8 @@
             android:layout_height="50dp"
             android:layout_margin="20dp"
             android:text="@string/register"
-            android:textColor="@android:color/white"
+            android:backgroundTint="@color/register"
+            android:textColor="@android:color/black"
             android:textSize="16sp" />
 
         <TextView
@@ -160,15 +161,6 @@
             android:textColor="@color/black"
             android:textSize="17sp" />
 
-        <Button
-            android:id="@+id/button_first"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/next"
-            app:layout_constraintBottom_toTopOf="@id/profile"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
     </LinearLayout>
 
 
