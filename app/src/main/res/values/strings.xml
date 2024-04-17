@@ -10,10 +10,18 @@
     <string name="phone_number">Phone Number</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="not_register">Already Registered?</string>
+    <string name="not_register">Already Registered? Login!</string>
     <string name="register">Register</string>
 
     <string name="lorem_ipsum">
         Welcome to Food Save!
     </string>
+    <string name="Donate">Donate</string>
+    <string name="shr_product_description">Description\n</string>
+    <string name="Receive">Receive</string>
+    <string name="Food_Map">Food Map</string>
+    <string name="Rewards">Rewards</string>
+    <string name="Importance">Importance of Saving Food</string>
+    <string name="About_Us">About Us</string>
+    <string name="Contact_Us">Contact Us</string>
 </resources>

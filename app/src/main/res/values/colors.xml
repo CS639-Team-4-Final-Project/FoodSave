@@ -5,4 +5,6 @@
     <color name="primary">#BEE5E9</color>
     <color name="background">#DAE1E1</color>
     <color name="register">#C0C0C0</color>
+    <color name="button">#9DC183</color>
+    <color name="dashboard_buttons">#367596</color>
 </resources>
