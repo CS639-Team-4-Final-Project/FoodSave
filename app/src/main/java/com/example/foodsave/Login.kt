@@ -44,7 +44,7 @@ class Login : Fragment() {
                                 "Login successful!",
                                 Toast.LENGTH_SHORT
                             ).show()
-                            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+                            findNavController().navigate(R.id.action_SecondFragment_to_ThirdFragment)
                         } else {
                             val errorMessage = when (task.exception) {
                                 is FirebaseAuthInvalidUserException -> "User not found. Please check your email."

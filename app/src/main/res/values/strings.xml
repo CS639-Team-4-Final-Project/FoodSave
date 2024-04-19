@@ -24,4 +24,7 @@
     <string name="Importance">Importance of Saving Food</string>
     <string name="About_Us">About Us</string>
     <string name="Contact_Us">Contact Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="third_fragment_label">Dashboard\n</string>
 </resources>
