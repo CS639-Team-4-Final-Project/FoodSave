@@ -59,10 +59,10 @@
 
     <!-- Importance of Saving Button -->
     <Button
-        android:id="@+id/Importance"
+        android:id="@+id/Feedback"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="@string/Importance"
+        android:text="@string/Feedback"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@+id/Rewards"
