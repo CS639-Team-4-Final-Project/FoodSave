@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Donate Button -->
+    <Button
+        android:id="@+id/Donate"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Donate"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/dashboard_buttons"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Receive Button -->
+    <Button
+        android:id="@+id/Receive"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Receive"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/Donate"
+        android:backgroundTint="@color/dashboard_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Food Map Button -->
+    <Button
+        android:id="@+id/Food_Map"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Food_Map"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/Receive"
+        android:backgroundTint="@color/dashboard_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Rewards Button -->
+    <Button
+        android:id="@+id/Rewards"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Rewards"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/Food_Map"
+        android:backgroundTint="@color/dashboard_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Importance of Saving Button -->
+    <Button
+        android:id="@+id/Importance"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Importance"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/Rewards"
+        android:backgroundTint="@color/dashboard_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- About Us Button -->
+    <Button
+        android:id="@+id/About_Us"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/About_Us"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/Importance"
+        android:backgroundTint="@color/dashboard_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Contact Us Button -->
+    <Button
+        android:id="@+id/Contact_Us"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Contact_Us"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/About_Us"
+        android:backgroundTint="@color/dashboard_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

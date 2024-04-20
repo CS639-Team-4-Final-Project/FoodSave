@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FoodSave</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Sign Up</string>
+    <string name="second_fragment_label">Login</string>
+    <string name="next">Login</string>
+    <string name="previous">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="not_register">Already Registered? Login!</string>
+    <string name="register">Register</string>
+
+    <string name="lorem_ipsum">
+        Welcome to Food Save!
+    </string>
+    <string name="Donate">Donate</string>
+    <string name="shr_product_description">Description\n</string>
+    <string name="Receive">Receive</string>
+    <string name="Food_Map">Food Map</string>
+    <string name="Rewards">Rewards</string>
+    <string name="Importance">Importance of Saving Food</string>
+    <string name="About_Us">About Us</string>
+    <string name="Contact_Us">Contact Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="third_fragment_label">Dashboard\n</string>
+</resources>
