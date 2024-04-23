@@ -68,7 +68,7 @@ class SignUp : Fragment() {
                         Toast.makeText(requireActivity(), "Registered Successfully.", Toast.LENGTH_SHORT).show()
 
                         // Navigate to the next screen or fragment
-                        findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+                        findNavController().navigate(R.id.action_SignUp_to_SignIn)
                     }
                     .addOnFailureListener { e ->
                         Log.e(TAG, "Error setting user data: ${e.message}")
@@ -88,7 +88,7 @@ class SignUp : Fragment() {
         }
 
         binding.login.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_SignUp_to_SignIn)
 
         }
     }
@@ -116,6 +116,10 @@ class SignUp : Fragment() {
 
         if (password.length < 6) {
             binding.passError.error = "Password must be at least 6 characters"
+            return false
+        }
+        if (phone.length != 10) {
+            binding.passError.error = "Phone No must be 10 digits"
             return false
         }
 

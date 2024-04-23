@@ -2,8 +2,8 @@
     <string name="app_name">FoodSave</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Sign Up</string>
-    <string name="second_fragment_label">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signIn">Login</string>
     <string name="next">Login</string>
     <string name="previous">Sign Up</string>
     <string name="name">Name</string>
@@ -23,6 +23,6 @@
     <string name="Rewards">Rewards</string>
     <string name="About_Us">About Us</string>
     <string name="Contact_Us">Contact Us</string>
-    <string name="third_fragment_label">Dashboard</string>
+    <string name="dashboard">Dashboard</string>
     <string name="Feedback">Feedback on Donor</string>
 </resources>
