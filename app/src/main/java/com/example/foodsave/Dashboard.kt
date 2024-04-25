@@ -32,6 +32,9 @@ class Dashboard : Fragment() {
         binding.Receive.setOnClickListener {
             findNavController().navigate(R.id.action_Dashboard_to_Receive)
         }
+        binding.Rewards.setOnClickListener {
+            findNavController().navigate(R.id.action_Dashboard_to_Rewards)
+        }
     }
 
     override fun onDestroyView() {

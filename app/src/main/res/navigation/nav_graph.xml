@@ -15,6 +15,7 @@
             android:id="@+id/action_SignUp_to_SignIn"
             app:destination="@id/SignIn" />
     </fragment>
+
     <fragment
         android:id="@+id/SignIn"
         android:name="com.example.foodsave.Login"
@@ -26,6 +27,7 @@
             app:destination="@id/Dashboard" />
 
     </fragment>
+
     <fragment
         android:id="@+id/Dashboard"
         android:name="com.example.foodsave.Dashboard"
@@ -34,11 +36,14 @@
         <action
             android:id="@+id/action_Dashboard_to_Donate"
             app:destination="@id/Donate" />
-
         <action
             android:id="@+id/action_Dashboard_to_Receive"
             app:destination="@id/Receive" />
+        <action
+            android:id="@+id/action_Dashboard_to_Rewards"
+            app:destination="@id/Rewards" />
     </fragment>
+
     <fragment
         android:id="@+id/Donate"
         android:name="com.example.foodsave.Donate"
@@ -54,6 +59,13 @@
         android:name="com.example.foodsave.Receive"
         android:label="@string/Receive"
         tools:layout="@layout/donate_screen">
+    </fragment>
+
+    <fragment
+        android:id="@+id/Rewards"
+        android:name="com.example.foodsave.Receive"
+        android:label="@string/Rewards"
+        tools:layout="@layout/rewards">
     </fragment>
 
 </navigation>
