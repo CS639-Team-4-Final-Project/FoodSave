@@ -25,4 +25,8 @@
     <string name="Contact_Us">Contact Us</string>
     <string name="dashboard">Dashboard</string>
     <string name="Feedback">Feedback on Donor</string>
+    <string name="donor_name">Donor Name</string>
+    <string name="food_name">Food Items</string>
+    <string name="description">Description</string>
+    <string name="submit">Submit</string>
 </resources>

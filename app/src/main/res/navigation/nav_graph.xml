@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/SignIn"
         android:name="com.example.foodsave.Login"
-        android:label="@string/signUp"
+        android:label="@string/signIn"
         tools:layout="@layout/login_screen">
 
         <action
@@ -44,6 +44,9 @@
         android:name="com.example.foodsave.Donate"
         android:label="@string/Donate"
         tools:layout="@layout/donate_screen">
+        <action
+            android:id="@+id/action_Donate_to_Dashboard"
+            app:destination="@id/Dashboard" />
     </fragment>
 
     <fragment

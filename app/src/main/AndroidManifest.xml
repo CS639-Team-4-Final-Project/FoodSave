@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodSave"
         tools:targetApi="31">
+
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -28,6 +31,10 @@
             android:label="Login page"
             android:theme="@style/Theme.FoodSave">
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB-1R31Pi3yU4h7QgebkThovMZ_irUh9LM" />
     </application>
 
 </manifest>
