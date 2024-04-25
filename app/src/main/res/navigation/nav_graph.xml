@@ -24,6 +24,7 @@
         <action
             android:id="@+id/action_SignIn_to_Dashboard"
             app:destination="@id/Dashboard" />
+
     </fragment>
     <fragment
         android:id="@+id/Dashboard"
@@ -33,13 +34,23 @@
         <action
             android:id="@+id/action_Dashboard_to_Donate"
             app:destination="@id/Donate" />
+
+        <action
+            android:id="@+id/action_Dashboard_to_Receive"
+            app:destination="@id/Receive" />
     </fragment>
     <fragment
         android:id="@+id/Donate"
         android:name="com.example.foodsave.Donate"
         android:label="@string/Donate"
         tools:layout="@layout/donate_screen">
-
-
     </fragment>
+
+    <fragment
+        android:id="@+id/Receive"
+        android:name="com.example.foodsave.Receive"
+        android:label="@string/Receive"
+        tools:layout="@layout/donate_screen">
+    </fragment>
+
 </navigation>

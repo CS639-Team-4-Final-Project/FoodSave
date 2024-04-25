@@ -29,6 +29,9 @@ class Dashboard : Fragment() {
        binding.Donate.setOnClickListener {
            findNavController().navigate(R.id.action_Dashboard_to_Donate)
        }
+        binding.Receive.setOnClickListener {
+            findNavController().navigate(R.id.action_Dashboard_to_Receive)
+        }
     }
 
     override fun onDestroyView() {
