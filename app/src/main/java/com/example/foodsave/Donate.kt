@@ -52,7 +52,7 @@ class Donate : Fragment() {
 
                             val record = hashMapOf(
                                 "name" to dFullName,
-                                "email" to dFoodItem,
+                                "foodItem" to dFoodItem,
                                 "phone" to dPhone,
                                 "description" to dDescription,
                                 "userId" to userID,
