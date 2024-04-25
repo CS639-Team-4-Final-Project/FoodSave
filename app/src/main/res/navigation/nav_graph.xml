@@ -42,6 +42,9 @@
         <action
             android:id="@+id/action_Dashboard_to_Rewards"
             app:destination="@id/Rewards" />
+        <action
+            android:id="@+id/action_Dashboard_to_About_Us"
+            app:destination="@id/About_Us" />
     </fragment>
 
     <fragment
@@ -68,4 +71,10 @@
         tools:layout="@layout/rewards">
     </fragment>
 
+    <fragment
+        android:id="@+id/About_Us"
+        android:name="com.example.foodsave.About_Us"
+        android:label="@string/About_Us"
+        tools:layout="@layout/about_us">
+    </fragment>
 </navigation>
