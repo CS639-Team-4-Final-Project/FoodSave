@@ -79,7 +79,7 @@
 
     <fragment
         android:id="@+id/Rewards"
-        android:name="com.example.foodsave.Receive"
+        android:name="com.example.foodsave.Rewards"
         android:label="@string/Rewards"
         tools:layout="@layout/rewards">
     </fragment>

@@ -85,8 +85,8 @@ class Donate : Fragment(), OnMapReadyCallback {
                         "description" to dDescription,
                         "expiry" to dExpiry,
                         "userId" to userID,
-                       // "location" to GeoPoint(30.588730, -87.163773),
-                        "location" to GeoPoint(currentLatLng!!.latitude, currentLatLng!!.longitude),
+                        "location" to GeoPoint(40.71144, -74.00514),
+                        //"location" to GeoPoint(currentLatLng!!.latitude, currentLatLng!!.longitude),
                         "timeStamp" to Timestamp.now()
                     )
                     collectionReference.add(record)
@@ -175,14 +175,15 @@ class Donate : Fragment(), OnMapReadyCallback {
                 .addOnSuccessListener { location ->
                     // Check if location is not null
                     if (location != null) {
-                         currentLatLng = LatLng(location.latitude, location.longitude)
+                        // currentLatLng = LatLng(location.latitude, location.longitude)
+                        currentLatLng = LatLng(40.71144, -74.00514)
 
                         // Add a marker at the current location
                         mMap.addMarker(
                             MarkerOptions()
                                 .position(currentLatLng!!)
                                 .title("My Location")
-                                .snippet("This is where I am")
+                                .snippet("Current Location")
                         )
 
                         // Move the camera to the current location
