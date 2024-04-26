@@ -35,6 +35,9 @@ class Dashboard : Fragment() {
         binding.Rewards.setOnClickListener {
             findNavController().navigate(R.id.action_Dashboard_to_Rewards)
         }
+        binding.AboutUs.setOnClickListener {
+            findNavController().navigate(R.id.action_Dashboard_to_About_Us)
+        }
     }
 
     override fun onDestroyView() {
