@@ -26,9 +26,9 @@ class Dashboard : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-       binding.Donate.setOnClickListener {
-           findNavController().navigate(R.id.action_Dashboard_to_Donate)
-       }
+        binding.Donate.setOnClickListener {
+            findNavController().navigate(R.id.action_Dashboard_to_Donate)
+        }
         binding.Receive.setOnClickListener {
             findNavController().navigate(R.id.action_Dashboard_to_Receive)
         }
@@ -37,8 +37,12 @@ class Dashboard : Fragment() {
         }
         binding.AboutUs.setOnClickListener {
             findNavController().navigate(R.id.action_Dashboard_to_About_Us)
+
         }
-    }
+            binding.FoodMap.setOnClickListener {
+                findNavController().navigate(R.id.action_Dashboard_to_FoodMap)
+            }
+        }
 
     override fun onDestroyView() {
         super.onDestroyView()

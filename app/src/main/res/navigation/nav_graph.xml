@@ -29,6 +29,15 @@
     </fragment>
 
     <fragment
+        android:id="@+id/FoodMap"
+        android:name="com.example.foodsave.FoodMap"
+        android:label="@string/Food_Map"
+        tools:layout="@layout/food_map">
+    <action
+        android:id="@+id/action_Dashboard_to_FoodMap"
+        app:destination="@id/FoodMap" />
+    </fragment>
+    <fragment
         android:id="@+id/Dashboard"
         android:name="com.example.foodsave.Dashboard"
         android:label="@string/dashboard"
@@ -45,6 +54,10 @@
         <action
             android:id="@+id/action_Dashboard_to_About_Us"
             app:destination="@id/About_Us" />
+
+        <action
+            android:id="@+id/action_Dashboard_to_FoodMap"
+            app:destination="@id/FoodMap" />
     </fragment>
 
     <fragment
