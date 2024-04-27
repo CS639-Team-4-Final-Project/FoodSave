@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">FoodSave</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Log Out</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Sign Up</string>
-    <string name="second_fragment_label">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="signIn">Login</string>
     <string name="next">Login</string>
     <string name="previous">Sign Up</string>
     <string name="name">Name</string>
@@ -12,6 +12,7 @@
     <string name="prompt_password">Password</string>
     <string name="not_register">Already Registered? Login!</string>
     <string name="register">Register</string>
+    <string name="expiry_date">Expiry</string>
 
     <string name="lorem_ipsum">
         Welcome to Food Save!
@@ -22,7 +23,18 @@
     <string name="Food_Map">Food Map</string>
     <string name="Rewards">Rewards</string>
     <string name="About_Us">About Us</string>
+
     <string name="Contact_Us">Contact Us</string>
-    <string name="third_fragment_label">Dashboard</string>
+    <string name="dashboard">Dashboard</string>
     <string name="Feedback">Feedback on Donor</string>
+    <string name="donor_name">Donor Name</string>
+    <string name="food_name">Food Items</string>
+    <string name="description">Description</string>
+    <string name="submit">Submit</string>
+    <string name="your_text_here">Hello, we are passionate about tackling food waste through cutting-edge app development.
+        \nWith a focus on sustainability, efficiency, and innovation, we strive to empower businesses and individuals to minimize food waste and maximize resources.
+        \nOur team combines expertise in technology and waste management to create tailored solutions that address the unique challenges of the food industry.
+        \nFrom inventory management to consumer engagement, our apps streamline processes and promote responsible consumption.
+        \nTogether, we are working towards a greener, more sustainable future where food waste is minimized, and resources are utilized efficiently for the benefit of all.</string>
+
 </resources>

@@ -1,7 +1,6 @@
 package com.example.foodsave
 
 import android.content.ContentValues.TAG
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -14,9 +13,7 @@ import com.example.foodsave.databinding.SignUpBinding
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore
 
-/**
- * A simple [Fragment] subclass as the default destination in the navigation.
- */
+
 class SignUp : Fragment() {
 
     private var _binding: SignUpBinding? = null
@@ -68,7 +65,7 @@ class SignUp : Fragment() {
                         Toast.makeText(requireActivity(), "Registered Successfully.", Toast.LENGTH_SHORT).show()
 
                         // Navigate to the next screen or fragment
-                        findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+                        findNavController().navigate(R.id.action_SignUp_to_SignIn)
                     }
                     .addOnFailureListener { e ->
                         Log.e(TAG, "Error setting user data: ${e.message}")
@@ -88,7 +85,7 @@ class SignUp : Fragment() {
         }
 
         binding.login.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_SignUp_to_SignIn)
 
         }
     }
@@ -116,6 +113,10 @@ class SignUp : Fragment() {
 
         if (password.length < 6) {
             binding.passError.error = "Password must be at least 6 characters"
+            return false
+        }
+        if (phone.length != 10) {
+            binding.passError.error = "Phone No must be 10 digits"
             return false
         }
 

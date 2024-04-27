@@ -3,34 +3,91 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/SignUp">
 
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/SignUp"
         android:name="com.example.foodsave.SignUp"
-        android:label="@string/first_fragment_label"
+        android:label="@string/signUp"
         tools:layout="@layout/sign_up">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_SignUp_to_SignIn"
+            app:destination="@id/SignIn" />
     </fragment>
+
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/SignIn"
         android:name="com.example.foodsave.Login"
-        android:label="@string/second_fragment_label"
+        android:label="@string/signIn"
         tools:layout="@layout/login_screen">
 
         <action
-            android:id="@+id/action_SecondFragment_to_ThirdFragment"
-            app:destination="@id/ThirdFragment" />
+            android:id="@+id/action_SignIn_to_Dashboard"
+            app:destination="@id/Dashboard" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FoodMap"
+        android:name="com.example.foodsave.FoodMap"
+        android:label="@string/Food_Map"
+        tools:layout="@layout/food_map">
+    <action
+        android:id="@+id/action_Dashboard_to_FoodMap"
+        app:destination="@id/FoodMap" />
     </fragment>
     <fragment
-        android:id="@+id/ThirdFragment"
+        android:id="@+id/Dashboard"
         android:name="com.example.foodsave.Dashboard"
-        android:label="@string/third_fragment_label"
+        android:label="@string/dashboard"
         tools:layout="@layout/dashboard">
+        <action
+            android:id="@+id/action_Dashboard_to_Donate"
+            app:destination="@id/Donate" />
+        <action
+            android:id="@+id/action_Dashboard_to_Receive"
+            app:destination="@id/Receive" />
+        <action
+            android:id="@+id/action_Dashboard_to_Rewards"
+            app:destination="@id/Rewards" />
+        <action
+            android:id="@+id/action_Dashboard_to_About_Us"
+            app:destination="@id/About_Us" />
 
+        <action
+            android:id="@+id/action_Dashboard_to_FoodMap"
+            app:destination="@id/FoodMap" />
+    </fragment>
 
+    <fragment
+        android:id="@+id/Donate"
+        android:name="com.example.foodsave.Donate"
+        android:label="@string/Donate"
+        tools:layout="@layout/donate_screen">
+        <action
+            android:id="@+id/action_Donate_to_Dashboard"
+            app:destination="@id/Dashboard" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Receive"
+        android:name="com.example.foodsave.Receive"
+        android:label="@string/Receive"
+        tools:layout="@layout/donate_screen">
+    </fragment>
+
+    <fragment
+        android:id="@+id/Rewards"
+        android:name="com.example.foodsave.Rewards"
+        android:label="@string/Rewards"
+        tools:layout="@layout/rewards">
+    </fragment>
+
+    <fragment
+        android:id="@+id/About_Us"
+        android:name="com.example.foodsave.About_Us"
+        android:label="@string/About_Us"
+        tools:layout="@layout/about_us">
     </fragment>
 </navigation>
