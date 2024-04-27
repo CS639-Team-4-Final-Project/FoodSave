@@ -23,6 +23,7 @@
     <string name="Food_Map">Food Map</string>
     <string name="Rewards">Rewards</string>
     <string name="About_Us">About Us</string>
+
     <string name="Contact_Us">Contact Us</string>
     <string name="dashboard">Dashboard</string>
     <string name="Feedback">Feedback on Donor</string>
@@ -30,5 +31,10 @@
     <string name="food_name">Food Items</string>
     <string name="description">Description</string>
     <string name="submit">Submit</string>
-    <string name="About_us_data">Welcome to About US</string>
+    <string name="your_text_here">Hello, we are passionate about tackling food waste through cutting-edge app development.
+        \nWith a focus on sustainability, efficiency, and innovation, we strive to empower businesses and individuals to minimize food waste and maximize resources.
+        \nOur team combines expertise in technology and waste management to create tailored solutions that address the unique challenges of the food industry.
+        \nFrom inventory management to consumer engagement, our apps streamline processes and promote responsible consumption.
+        \nTogether, we are working towards a greener, more sustainable future where food waste is minimized, and resources are utilized efficiently for the benefit of all.</string>
+
 </resources>
