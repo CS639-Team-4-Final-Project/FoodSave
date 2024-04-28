@@ -1,5 +1,6 @@
 package com.example.foodsave
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +10,9 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import com.example.foodsave.databinding.ActivityMainBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,10 +44,26 @@ class MainActivity : AppCompatActivity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.logoutButton -> {
+                logOutUser()
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
+
+    private fun logOutUser() {
+        FirebaseAuth.getInstance().signOut()
+        findNavController(R.id.nav_host_fragment_content_main)
+            .navigate(R.id.action_Dashboard_to_SignIn)
+
+        Toast.makeText(
+            this,
+            "Logout successful!",
+            Toast.LENGTH_SHORT
+        ).show()
+    }
+
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)

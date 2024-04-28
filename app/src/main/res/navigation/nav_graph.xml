@@ -58,6 +58,10 @@
         <action
             android:id="@+id/action_Dashboard_to_FoodMap"
             app:destination="@id/FoodMap" />
+
+        <action
+            android:id="@+id/action_Dashboard_to_SignIn"
+            app:destination="@id/SignIn" />
     </fragment>
 
     <fragment
