@@ -1,6 +1,8 @@
 package com.example.foodsave
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -30,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
-
+        supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(169, 169 ,169)))
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
