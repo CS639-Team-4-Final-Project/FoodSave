@@ -81,6 +81,7 @@ class Donate : Fragment(), OnMapReadyCallback {
                     val record = hashMapOf(
                         "name" to dFullName,
                         "foodItem" to dFoodItem,
+                        "isAvailable" to true,
                         "phone" to dPhone,
                         "description" to dDescription,
                         "expiry" to dExpiry,
@@ -93,6 +94,9 @@ class Donate : Fragment(), OnMapReadyCallback {
                         .addOnSuccessListener {
                             Log.d(ContentValues.TAG, "Donate Record created for userID: $userID")
                             Toast.makeText(requireActivity(), "Added Successfully.", Toast.LENGTH_SHORT).show()
+
+                            //Adding 50 Points to user for donating food
+                            updateRewardsPoints(userID)
 
                             // Navigate to the next screen or fragment
                             findNavController().navigate(R.id.action_Donate_to_Dashboard)
@@ -208,6 +212,34 @@ class Donate : Fragment(), OnMapReadyCallback {
             ).show()
         }
     }
+
+    private fun updateRewardsPoints(userID: String) {
+        val userRef = fStore.collection("users").document(userID)
+
+        userRef.get()
+            .addOnSuccessListener { documentSnapshot ->
+                val currentPoints = documentSnapshot.getLong("rewards") ?: 0
+                val newPoints = currentPoints + 50
+
+                val updateData = mapOf(
+                    "rewards" to newPoints
+                )
+                userRef.update(updateData)
+                    .addOnSuccessListener {
+                        Log.d(ContentValues.TAG, "Rewards updated for userID: $userID")
+                        Toast.makeText(requireActivity(), "50 Points in Rewards Added Successfully.", Toast.LENGTH_SHORT).show()
+                    }
+                    .addOnFailureListener { e ->
+                        Log.e(ContentValues.TAG, "Error updating rewards: ${e.message}")
+                        Toast.makeText(requireActivity(), "Error updating rewards.", Toast.LENGTH_SHORT).show()
+                    }
+            }
+            .addOnFailureListener { e ->
+                Log.e(ContentValues.TAG, "Error getting user document: ${e.message}")
+                Toast.makeText(requireActivity(), "Error getting user document.", Toast.LENGTH_SHORT).show()
+            }
+    }
+
 
 
     override fun onDestroyView() {

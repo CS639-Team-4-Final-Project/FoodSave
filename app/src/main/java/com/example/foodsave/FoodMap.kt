@@ -89,7 +89,7 @@ class FoodMap : Fragment(), OnMapReadyCallback {
                         // Move the camera to the current location
                         val cameraPosition = CameraPosition.Builder()
                             .target(currentLatLng!!)
-                            .zoom(15f)
+                            .zoom(13f)
                             .build()
                         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
                     } else {
@@ -117,7 +117,7 @@ class FoodMap : Fragment(), OnMapReadyCallback {
                 if (task.isSuccessful) {
                     for (document in task.result!!) {
                         Log.d(TAG, "${document.id} => ${document.data}")
-                        if (document.contains("location") && document.contains("name") && document.contains("description")) {
+                        if (document.contains("location") && document.contains("name") && document.contains("description") && document.get("isAvailable")== true) {
                             val location = document.getGeoPoint("location")
                             val title = document.getString("name")
                             val foodItem = document.getString("foodItem")
