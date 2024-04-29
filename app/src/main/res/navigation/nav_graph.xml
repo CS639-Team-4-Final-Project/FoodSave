@@ -77,8 +77,10 @@
     <fragment
         android:id="@+id/Receive"
         android:name="com.example.foodsave.Receive"
-        android:label="@string/Receive"
-        tools:layout="@layout/donate_screen">
+        android:label="@string/Receive" >
+        <action
+            android:id="@+id/action_Receive_to_Dashboard"
+            app:destination="@id/Dashboard" />
     </fragment>
 
     <fragment

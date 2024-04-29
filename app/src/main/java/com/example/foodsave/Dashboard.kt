@@ -26,6 +26,8 @@ class Dashboard : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val message = arguments?.getString("message")
+
         binding.Donate.setOnClickListener {
             findNavController().navigate(R.id.action_Dashboard_to_Donate)
         }
