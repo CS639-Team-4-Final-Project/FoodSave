@@ -36,5 +36,10 @@
         \nOur team combines expertise in technology and waste management to create tailored solutions that address the unique challenges of the food industry.
         \nFrom inventory management to consumer engagement, our apps streamline processes and promote responsible consumption.
         \nTogether, we are working towards a greener, more sustainable future where food waste is minimized, and resources are utilized efficiently for the benefit of all.</string>
+    <string name="points">POINTS</string>
+    <string name="redeem">REDEEM!</string>
+    <string name="number">123</string>
+    <string name="badges">BADGES</string>
+    <string name="nextButton">Next Badge</string>
 
 </resources>

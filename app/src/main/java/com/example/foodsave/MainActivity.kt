@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
-        supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(169, 169 ,169)))
+        supportActionBar?.setBackgroundDrawable(ColorDrawable(Color.rgb(192, 192 ,192)))
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
