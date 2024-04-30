@@ -44,6 +44,10 @@ class Dashboard : Fragment() {
             binding.FoodMap.setOnClickListener {
                 findNavController().navigate(R.id.action_Dashboard_to_FoodMap)
             }
+
+        binding.ContactUs.setOnClickListener {
+            findNavController().navigate(R.id.action_Dashboard_to_Contact_Us)
+        }
         }
 
     override fun onDestroyView() {
