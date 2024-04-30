@@ -31,6 +31,22 @@
     <string name="food_name">Food Items</string>
     <string name="description">Description</string>
     <string name="submit">Submit</string>
+
+    <string-array name="donor_ratings">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+    </string-array>
+
+    <string-array name="food_quality_ratings">
+        <item>Not Good</item>
+        <item>Satisfactory</item>
+        <item>Good</item>
+        <item>Excellent</item>
+    </string-array>
+
     <string name="your_text_here">Hello, we are passionate about tackling food waste through cutting-edge app development.
         \nWith a focus on sustainability, efficiency, and innovation, we strive to empower businesses and individuals to minimize food waste and maximize resources.
         \nOur team combines expertise in technology and waste management to create tailored solutions that address the unique challenges of the food industry.
@@ -41,5 +57,6 @@
     <string name="number">123</string>
     <string name="badges">BADGES</string>
     <string name="nextButton">Next Badge</string>
+
 
 </resources>

@@ -37,6 +37,9 @@ class Dashboard : Fragment() {
         binding.Rewards.setOnClickListener {
             findNavController().navigate(R.id.action_Dashboard_to_Rewards)
         }
+        binding.Feedback.setOnClickListener {
+            findNavController().navigate(R.id.action_Dashboard_to_Feedback_on_Donor)
+        }
         binding.AboutUs.setOnClickListener {
             findNavController().navigate(R.id.action_Dashboard_to_About_Us)
 

@@ -52,6 +52,9 @@
             android:id="@+id/action_Dashboard_to_Rewards"
             app:destination="@id/Rewards" />
         <action
+            android:id="@+id/action_Dashboard_to_Feedback_on_Donor"
+            app:destination="@id/FeedbackForm" />
+        <action
             android:id="@+id/action_Dashboard_to_About_Us"
             app:destination="@id/About_Us" />
 
@@ -96,4 +99,10 @@
         android:label="@string/About_Us"
         tools:layout="@layout/about_us">
     </fragment>
+
+    <activity
+        android:id="@+id/FeedbackForm"
+        android:name="com.example.foodsave.FeedbackForm"
+        android:label="@string/Feedback"
+        tools:layout="@layout/activity_feedback_form" />
 </navigation>
