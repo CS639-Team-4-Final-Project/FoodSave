@@ -32,6 +32,7 @@
     <string name="description">Description</string>
     <string name="submit">Submit</string>
 
+    <string name="choose_from_below">Choose from below</string>
     <string-array name="donor_ratings">
             <item>1</item>
             <item>2</item>
