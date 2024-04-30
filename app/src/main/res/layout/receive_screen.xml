@@ -137,7 +137,7 @@
                         android:layout_margin="20dp"
                         android:backgroundTint="@color/register"
                         android:text="@string/submit"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         tools:ignore="UnusedAttribute" />
 

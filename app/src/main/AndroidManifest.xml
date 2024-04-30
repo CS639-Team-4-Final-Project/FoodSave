@@ -36,6 +36,11 @@
             android:theme="@style/Theme.FoodSave">
         </activity>
 
+        <activity
+            android:name=".FeedbackForm"
+            android:label="@string/Feedback"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyB-1R31Pi3yU4h7QgebkThovMZ_irUh9LM" />
