@@ -50,9 +50,9 @@
 
     <string name="_1_999_999_9999">+1 (999) 999 - 9999</string>
     <string name="phone">Phone:</string>
-    <string name="n_foodsave_gmail_com">\n foodsave@gmail.com</string>
+    <string name="foodsave_gmail_com">foodsave@gmail.com</string>
     <string name="email">Email:</string>
-    <string name="one_pace_plaza_nnew_york_ny_10038">One Pace Plaza,\nNew York, NY 10038</string>
+    <string name="one_pace_plaza_new_york_ny_10038">One Pace Plaza,\nNew York, NY 10038</string>
     <string name="address">Address:</string>
 
     <string name="timings">Timings:</string>

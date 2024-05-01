@@ -6,83 +6,87 @@
     android:layout_height="match_parent"
     android:background="@drawable/background2"
     xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".About_Us">
+    tools:context=".About_Us">
 
     <TextView
 
         android:id="@+id/welcometext"
-        android:layout_width="330dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/your_text_here"
-        android:textSize="13sp"
+        android:textSize="15sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="?attr/textAppearanceHeadline6"
         />
 
     <TextView
 
         android:id="@+id/ouraimTextView"
-        android:layout_width="330dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/our_aim_Text_View"
         android:textSize="23sp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/welcometext"
         app:layout_constraintStart_toStartOf="@id/welcometext"
-        app:layout_constraintTop_toBottomOf="@id/welcometext"/>
+        app:layout_constraintTop_toBottomOf="@id/welcometext"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
 
     <TextView
         android:id="@+id/ouraim"
-        android:layout_width="330dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/aim"
-        android:textSize="13sp"
-        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:layout_marginTop="0dp"
         app:layout_constraintEnd_toEndOf="@id/ouraimTextView"
         app:layout_constraintStart_toStartOf="@id/ouraimTextView"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="145dp"
-        app:layout_constraintTop_toBottomOf="@id/ouraimTextView"/>
+        app:layout_constraintTop_toBottomOf="@id/ouraimTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
 
     <TextView
 
         android:id="@+id/ChooseUsTextView"
-        android:layout_width="330dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:text="@string/choose"
         android:textSize="23sp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:textStyle="bold"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="@id/ouraim"
         app:layout_constraintStart_toStartOf="@id/ouraim"
         app:layout_constraintTop_toBottomOf="@id/ouraim"
-         />
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
 
     <TextView
         android:id="@+id/WhyChooseUsTextView"
-        android:layout_width="330dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/why_choose_us"
-        android:textSize="13sp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="@id/ChooseUsTextView"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintStart_toStartOf="@id/ChooseUsTextView"
         app:layout_constraintTop_toBottomOf="@id/ChooseUsTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"
         />
 
     <TextView
 
         android:id="@+id/EndingTextView"
-        android:layout_width="330dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/common"
@@ -91,10 +95,8 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@id/WhyChooseUsTextView"
         app:layout_constraintTop_toBottomOf="@id/WhyChooseUsTextView"
-        app:layout_constraintEnd_toEndOf="@id/WhyChooseUsTextView"/>
+        app:layout_constraintEnd_toEndOf="@id/WhyChooseUsTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
