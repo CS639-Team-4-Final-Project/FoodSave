@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Contact_Us">
+
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/PaceaddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/one_pace_plaza_new_york_ny_10038"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/addressTextView"
+        app:layout_constraintStart_toStartOf="@id/addressTextView"
+        app:layout_constraintTop_toBottomOf="@id/addressTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/PaceaddressTextView"
+        app:layout_constraintStart_toStartOf="@id/PaceaddressTextView"
+        app:layout_constraintTop_toBottomOf="@id/PaceaddressTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <TextView
+        android:id="@+id/gmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="@string/foodsave_gmail_com"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/emailTextView"
+        app:layout_constraintStart_toStartOf="@id/emailTextView"
+        app:layout_constraintTop_toBottomOf="@id/emailTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="@string/phone"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/gmailTextView"
+        app:layout_constraintStart_toStartOf="@id/gmailTextView"
+        app:layout_constraintTop_toBottomOf="@id/gmailTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="@string/_1_999_999_9999"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/phoneTextView"
+        app:layout_constraintStart_toStartOf="@id/phoneTextView"
+        app:layout_constraintTop_toBottomOf="@id/phoneTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <TextView
+        android:id="@+id/timingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/timings"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/TextView"
+        app:layout_constraintStart_toStartOf="@id/TextView"
+        app:layout_constraintTop_toBottomOf="@id/TextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <TextView
+        android:id="@+id/timingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="@string/mon_fri_9am_to_6pm"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/timingTextView"
+        app:layout_constraintStart_toStartOf="@id/timingTextView"
+        app:layout_constraintTop_toBottomOf="@id/timingTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <TextView
+        android:id="@+id/connectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/connect_with_us_on"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/timingsTextView"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="@id/timingsTextView"
+        app:layout_constraintTop_toBottomOf="@id/timingsTextView"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <ImageView
+        android:id="@+id/facebookIcon"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:onClick="openFacebookUrl"
+        android:src="@drawable/facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/connectTextView" />
+
+    <ImageView
+        android:id="@+id/instagramIcon"
+        android:layout_width="48dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:onClick="openInstagramUrl"
+        android:src="@drawable/instagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/connectTextView" />
+
+    <ImageView
+        android:id="@+id/twitterIcon"
+        android:layout_width="49dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:onClick="openTwitterUrl"
+        android:src="@drawable/twitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/connectTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

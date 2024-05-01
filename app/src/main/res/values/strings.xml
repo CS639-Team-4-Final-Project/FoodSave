@@ -32,6 +32,35 @@
     <string name="description">Description</string>
     <string name="submit">Submit</string>
 
+    <string name="your_text_here">Welcome to our food service app!
+        Our mission is simple: tackling food waste through cutting-edge technology and sustainable practices.
+        We believe that every meal matters, and by leveraging innovation, we can make a significant impact.</string>
+    <string name="our_aim_Text_View">Aim:</string>
+    <string name="aim">
+        Empowering Businesses: We partner with restaurants, grocery stores, and food suppliers to minimize food waste. Our technology streamlines inventory management, reduces overstocking, and ensures that surplus food finds its way to those who need it.
+        \n\nMaximizing Resources: We’re committed to maximizing the use of available resources. Whether it’s surplus ingredients, imperfect produce, or excess meals, we connect them to consumers, minimizing waste and promoting responsible consumption.
+        \n\nCircular Economy: Our team combines expertise in circular economy management. From farm to fork, we optimize the entire food supply chain, ensuring that food is utilized efficiently for the benefit of all.
+    </string>
+    <string name="choose">Why Choose Us?</string>
+    <string name="why_choose_us">
+        User-Friendly Experience: Our app is designed with you in mind. Easy navigation, intuitive menus, and a seamless ordering process make your food journey delightful.
+        \n\n Community Impact: By using our app, you contribute to a greener, more sustainable future. Every order matters, and together, we can reduce food waste one meal at a time.
+    </string>
+    <string name="common">Join us in this delicious revolution! Together, let’s make a difference.</string>
+
+    <string name="_1_999_999_9999">+1 (999) 999 - 9999</string>
+    <string name="phone">Phone:</string>
+    <string name="foodsave_gmail_com">foodsave@gmail.com</string>
+    <string name="email">Email:</string>
+    <string name="one_pace_plaza_new_york_ny_10038">One Pace Plaza,\nNew York, NY 10038</string>
+    <string name="address">Address:</string>
+
+    <string name="timings">Timings:</string>
+    <string name="mon_fri_9am_to_6pm">Mon - Fri: 9AM to 6PM</string>
+    <string name="connect_with_us_on">Connect with us on:</string>
+    <string name="ouraimTextView">aim</string>>
+
+
     <string name="choose_from_below">Choose from below</string>
     <string-array name="donor_ratings">
             <item>Choose from below</item>
@@ -50,16 +79,10 @@
         <item>Excellent</item>
     </string-array>
 
-    <string name="your_text_here">Hello, we are passionate about tackling food waste through cutting-edge app development.
-        \nWith a focus on sustainability, efficiency, and innovation, we strive to empower businesses and individuals to minimize food waste and maximize resources.
-        \nOur team combines expertise in technology and waste management to create tailored solutions that address the unique challenges of the food industry.
-        \nFrom inventory management to consumer engagement, our apps streamline processes and promote responsible consumption.
-        \nTogether, we are working towards a greener, more sustainable future where food waste is minimized, and resources are utilized efficiently for the benefit of all.</string>
     <string name="points">POINTS</string>
     <string name="redeem">REDEEM!</string>
     <string name="number">123</string>
     <string name="badges">BADGES</string>
     <string name="nextButton">Next Badge</string>
-
 
 </resources>

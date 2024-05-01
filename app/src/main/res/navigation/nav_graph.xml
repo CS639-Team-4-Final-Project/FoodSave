@@ -65,6 +65,10 @@
         <action
             android:id="@+id/action_Dashboard_to_SignIn"
             app:destination="@id/SignIn" />
+
+        <action
+            android:id="@+id/action_Dashboard_to_Contact_Us"
+            app:destination="@id/Contact_Us" />
     </fragment>
 
     <fragment
@@ -101,9 +105,18 @@
         tools:layout="@layout/about_us">
     </fragment>
 
+
+    <fragment
+        android:id="@+id/Contact_Us"
+        android:name="com.example.foodsave.Contact_Us"
+        android:label="@string/Contact_Us"
+        tools:layout="@layout/contact_us">
+    </fragment>
+
     <activity
         android:id="@+id/FeedbackForm"
         android:name="com.example.foodsave.FeedbackForm"
         android:label="@string/Feedback"
         tools:layout="@layout/activity_feedback_form" />
+
 </navigation>
