@@ -1,35 +1,68 @@
 package com.example.foodsave
 
+import android.Manifest
+import android.annotation.SuppressLint
+import android.content.ContentValues
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+
 import com.example.foodsave.databinding.ReceiveScreenBinding
-import com.google.firebase.firestore.DocumentReference
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
+import com.google.android.gms.maps.model.CameraPosition
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
+import com.google.firebase.auth.FirebaseAuth
+
 import com.google.firebase.firestore.FirebaseFirestore
 
-class Receive : Fragment() {
+class Receive : Fragment(), OnMapReadyCallback {
 
     private var _binding: ReceiveScreenBinding? = null
     private val binding get() = _binding!!
 
+    private lateinit var firebaseAuth: FirebaseAuth
+
     private lateinit var fStore: FirebaseFirestore
     private lateinit var receiverName: String
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
+    private var currentLatLng: LatLng? = null
+    private lateinit var mMap: GoogleMap
+    private val cloudstorage: FirebaseFirestore by lazy {
+        FirebaseFirestore.getInstance()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         _binding = ReceiveScreenBinding.inflate(inflater, container, false)
-        return binding.root
+        val view = binding.root
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
+
+        val mapFragment = childFragmentManager.findFragmentById(R.id.google_map) as SupportMapFragment
+        mapFragment.getMapAsync(this)
+
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        firebaseAuth = FirebaseAuth.getInstance()
         fStore = FirebaseFirestore.getInstance()
 
         binding.searchButton.setOnClickListener {
@@ -40,8 +73,11 @@ class Receive : Fragment() {
             val foodItem = binding.searchText.text.toString()
             val description = binding.descriptionText.text.toString()
             val expiry = binding.expiryText.text.toString()
-            receiverName = binding.receiverNameText.text.toString()
-            updateDonationStatus(foodItem, description, expiry, receiverName)
+            // receiverName = binding.receiverNameText.text.toString()
+            updateDonationStatus(foodItem, description, expiry)
+
+            findNavController().navigate(R.id.action_Receive_to_Dashboard)
+
         }
     }
 
@@ -64,60 +100,40 @@ class Receive : Fragment() {
             }
             .addOnFailureListener { exception ->
                 Log.d(TAG, "Error getting documents: ", exception)
-                Log.d(TAG, "Error getting documents: ", exception)
-
             }
     }
 
-    private fun updateDonationStatus(foodItem: String, description: String, expiry: String, receiverName: String) {
-        // Get the document reference for the donation record
-        val donationRef = fStore.collection("donateRecords").document(foodItem)
-
-        val donationStatus= hashMapOf(
-            "status" to "Received"
-        )
-
-
-        // Create a new document reference for the order history
+    private fun updateDonationStatus(foodItem: String, description: String, expiry: String) {
         val orderHistoryRef = fStore.collection("orderHistory").document()
+        val userID = firebaseAuth.currentUser?.uid
 
+        val userRef = fStore.collection("users").document(userID.toString())
+
+        userRef.get()
+            .addOnSuccessListener { documentSnapshot ->
+                val receiver = documentSnapshot.get("name")}
         // Create a map with the order details
         val orderDetails = hashMapOf(
             "foodItem" to foodItem,
             "description" to description,
             "expiry" to expiry,
-            "receiverName" to receiverName,
-
+            // "receiverName" to receiver,
+            "userId" to userID
         )
 
-        deleteAndAddToHistory(donationRef, orderHistoryRef, orderDetails, 3)
-
-    }
-    private fun deleteAndAddToHistory(
-        donationRef: DocumentReference,
-        orderHistoryRef: DocumentReference,
-        orderDetails: Map<String, Any>,
-        retryCount: Int
-    ) {
-        donationRef.delete()
+        // Set the order details in the document
+        orderHistoryRef.set(orderDetails)
             .addOnSuccessListener {
-                orderHistoryRef.set(orderDetails)
-                    .addOnSuccessListener {
-                        findNavController().navigate(R.id.action_Receive_to_Dashboard)
-                    }
-                    .addOnFailureListener { exception ->
-                        Log.d(TAG, "Error adding to order history: ", exception)
-                    }
+                Log.d(ContentValues.TAG, "Order History Updated")
+                Toast.makeText(requireActivity(), "Order History Updated.", Toast.LENGTH_SHORT).show()
             }
-            .addOnFailureListener { exception ->
-                if (retryCount > 0) {
-                    Log.d(TAG, "Retrying deletion... Attempts left: $retryCount")
-                    deleteAndAddToHistory(donationRef, orderHistoryRef, orderDetails, retryCount - 1)
-                } else {
-                    Log.d(TAG, "Error deleting donation record: ", exception)
-                }
+            .addOnFailureListener { e ->
+                Log.d(ContentValues.TAG, "Order History failed to Updated")
+                Toast.makeText(requireActivity(), "Order History failed to Updated\"", Toast.LENGTH_SHORT).show()
             }
     }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()
@@ -126,5 +142,89 @@ class Receive : Fragment() {
 
     companion object {
         private const val TAG = "ReceiveFragment"
+    }
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        mMap = googleMap
+        showLocation()
+
+        // Check for location permission
+        if (ContextCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            // Enable location button on the map
+            mMap.isMyLocationEnabled = true
+
+            // Get last known location
+            fusedLocationClient.lastLocation
+                .addOnSuccessListener { location ->
+                    // Check if location is not null
+                    if (location != null) {
+                        //   currentLatLng = LatLng(location.latitude, location.longitude)
+                        currentLatLng= LatLng(40.71144, -74.00514)
+                        // Add a marker at the current location
+                        mMap.addMarker(
+                            MarkerOptions()
+                                .position(currentLatLng!!)
+                                .title("My Location")
+                                .snippet("Current Location")
+                        )
+
+                        // Move the camera to the current location
+                        val cameraPosition = CameraPosition.Builder()
+                            .target(currentLatLng!!)
+                            .zoom(13f)
+                            .build()
+                        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
+                    } else {
+                        Toast.makeText(
+                            requireContext(),
+                            "Failed to get current location.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+        } else {
+            Toast.makeText(
+                requireContext(),
+                "Location permission not granted.",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+    }
+
+    @SuppressLint("SuspiciousIndentation")
+    private fun showLocation() {
+        cloudstorage.collection("donateRecords")
+            .get()
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    for (document in task.result!!) {
+                        Log.d(TAG, "${document.id} => ${document.data}")
+                        if (document.contains("location") && document.contains("name") && document.contains("description") && document.get("isAvailable")== true) {
+                            val location = document.getGeoPoint("location")
+                            val title = document.getString("name")
+                            val foodItem = document.getString("foodItem")
+                            val expiry = document.getString("expiry")
+                            val description = document.getString("description")
+
+                            Log.d(TAG, "$location Success $title")
+                            val latLng = LatLng(location!!.latitude, location.longitude)
+                            mMap.addMarker(
+                                MarkerOptions().position(latLng)
+                                    .title("$title ($foodItem) :$expiry")
+                                    .snippet(description)
+                                    .icon(
+                                        BitmapDescriptorFactory.defaultMarker(
+                                            BitmapDescriptorFactory.HUE_GREEN))
+                            )
+                        }
+                    }
+                } else {
+                    Log.d(TAG, "Error fetching data: ", task.exception)
+                }
+            }
     }
 }

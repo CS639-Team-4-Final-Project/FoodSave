@@ -1,22 +1,50 @@
 package com.example.foodsave
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.Typeface
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
+import android.text.style.StyleSpan
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.foodsave.databinding.ActivityFeedbackFormBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class FeedbackForm : AppCompatActivity() {
     private lateinit var binding: ActivityFeedbackFormBinding
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFeedbackFormBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Set up the Firebase Auth instance
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        setSupportActionBar(binding.toolbar)
+
+        // Set the app bar title
+        val title = "Feedback Form"
+        val spannableTitle = SpannableString(title)
+        spannableTitle.setSpan(ForegroundColorSpan(Color.BLACK), 0, title.length, 0)
+        supportActionBar?.title = spannableTitle
+
+        // Enable the back button in the app bar
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.toolbar.navigationIcon?.setTint(ContextCompat.getColor(this, android.R.color.black))
+
         setupDropdowns()
         setupSubmitButton()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     private fun setupDropdowns() {
@@ -28,7 +56,7 @@ class FeedbackForm : AppCompatActivity() {
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             binding.spinnerDonorRating.adapter = adapter
-            binding.spinnerDonorRating.setSelection(0) // Set the default selection to "Choose from below"
+            binding.spinnerDonorRating.setSelection(0) // Set the default selection to the first item (0)
         }
 
         // Set up the food quality dropdown
@@ -39,7 +67,7 @@ class FeedbackForm : AppCompatActivity() {
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             binding.spinnerFoodQuality.adapter = adapter
-            binding.spinnerFoodQuality.setSelection(0) // Set the default selection to "Choose from below"
+            binding.spinnerFoodQuality.setSelection(0) // Set the default selection to the first item (0)
         }
     }
 
@@ -67,6 +95,7 @@ class FeedbackForm : AppCompatActivity() {
         // You can use the `donorRating` and `foodQuality` values (which will be 0 if "Choose from below" is selected)
         Toast.makeText(this, "Feedback submitted successfully!", Toast.LENGTH_SHORT).show()
 
-        finish()
+        // Navigate back to the previous screen
+        onBackPressed()
     }
 }

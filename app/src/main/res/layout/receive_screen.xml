@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background2"
-    tools:context=".Donate">
+    tools:context=".Receive">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,24 +35,10 @@
                     android:layout_marginLeft="10dp"
                     android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/receiverNameText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:hint="Receiver Name"
-                        android:inputType="textPersonName"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.497"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/expiryText"
-                        app:layout_constraintVertical_bias="0.05" />
-
-
-                    <EditText
+                    <AutoCompleteTextView
                         android:id="@+id/searchText"
                         android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
                         android:layout_height="wrap_content"
                         android:hint="Search food item" />
 
@@ -60,7 +46,11 @@
                         android:id="@+id/searchButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Search" />
+                        android:layout_margin="20dp"
+                        android:layout_gravity="center"
+                        android:text="Search"
+                        android:backgroundTint="@color/register"
+                        android:textColor="@color/white"/>
 
 
 
@@ -124,7 +114,7 @@
                         xmlns:map="http://schemas.android.com/apk/res-auto"
                         android:name="com.google.android.gms.maps.SupportMapFragment"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="250dp"
                         android:layout_marginTop="20dp"
                         map:uiZoomControls="true"
                         tools:ignore="FragmentTagUsage"

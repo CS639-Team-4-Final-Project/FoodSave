@@ -34,6 +34,7 @@
 
     <string name="choose_from_below">Choose from below</string>
     <string-array name="donor_ratings">
+            <item>Choose from below</item>
             <item>1</item>
             <item>2</item>
             <item>3</item>
@@ -42,6 +43,7 @@
     </string-array>
 
     <string-array name="food_quality_ratings">
+        <item>Choose from below</item>
         <item>Not Good</item>
         <item>Satisfactory</item>
         <item>Good</item>

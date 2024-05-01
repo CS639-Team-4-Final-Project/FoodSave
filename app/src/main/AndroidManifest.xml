@@ -35,10 +35,8 @@
             android:label="Login page"
             android:theme="@style/Theme.FoodSave">
         </activity>
-
         <activity
             android:name=".FeedbackForm"
-            android:label="@string/Feedback"
             android:exported="false" />
 
         <meta-data
