@@ -12,12 +12,14 @@ import com.example.foodsave.databinding.LoginScreenBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.bumptech.glide.Glide
 
 class Login : Fragment() {
 
     private var _binding: LoginScreenBinding? = null
     private val binding get() = _binding!!
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var imageUrl:String
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,7 +27,13 @@ class Login : Fragment() {
     ): View? {
         _binding = LoginScreenBinding.inflate(inflater, container, false)
         firebaseAuth = FirebaseAuth.getInstance()
+        imageUrl = "https://st4.depositphotos.com/3457277/26637/i/450/depositphotos_266372298-stock-photo-zero-waste-vegetables-and-food.jpg"
+
+        Glide.with(this)
+            .load(imageUrl)
+            .into(binding.imageView)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

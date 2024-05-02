@@ -20,6 +20,11 @@
         android:background="@drawable/background2"
         tools:ignore="UselessParent">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailError"
             android:layout_width="match_parent"

@@ -16,10 +16,12 @@ import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import com.example.foodsave.databinding.ActivityFeedbackFormBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.bumptech.glide.Glide
 
 class FeedbackForm : AppCompatActivity() {
     private lateinit var binding: ActivityFeedbackFormBinding
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var imageUrl:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +42,11 @@ class FeedbackForm : AppCompatActivity() {
         // Enable the back button in the app bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.toolbar.navigationIcon?.setTint(ContextCompat.getColor(this, android.R.color.black))
+        imageUrl = "https://media.gettyimages.com/id/1457889029/photo/group-of-food-with-high-content-of-dietary-fiber-arranged-side-by-side.jpg?s=612x612&w=0&k=20&c=SEyObHsbBsrd1XZlgEg389VT86BMFKZKfKReKyVPAk4="
+
+        Glide.with(this)
+            .load(imageUrl)
+            .into(binding.imageView)
 
         setupDropdowns()
         setupSubmitButton()
