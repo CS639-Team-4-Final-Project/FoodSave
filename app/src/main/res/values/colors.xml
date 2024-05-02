@@ -8,4 +8,5 @@
     <color name="register">#367596</color>
     <color name="button">#9DC183</color>
     <color name="dashboard_buttons">#367596</color>
+    <color name="gray_button_color" />
 </resources>

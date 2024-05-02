@@ -49,8 +49,9 @@
                         android:layout_margin="20dp"
                         android:layout_gravity="center"
                         android:text="Search"
-                        android:backgroundTint="@color/register"
-                        android:textColor="@color/white"/>
+                        android:backgroundTint="@color/gray_button_color"
+                        android:textColor="@color/white"
+                        android:enabled="false"/>
 
 
 

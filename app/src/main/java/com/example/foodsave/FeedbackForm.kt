@@ -7,10 +7,13 @@ import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.widget.addTextChangedListener
 import com.example.foodsave.databinding.ActivityFeedbackFormBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -40,6 +43,9 @@ class FeedbackForm : AppCompatActivity() {
 
         setupDropdowns()
         setupSubmitButton()
+
+        // Disable the submit button initially
+        binding.btnSubmitFeedback.isEnabled = false
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -75,6 +81,37 @@ class FeedbackForm : AppCompatActivity() {
         binding.btnSubmitFeedback.setOnClickListener {
             submitFeedback()
         }
+
+        // Enable the submit button when the user has filled out the form
+        binding.etDonorName.addTextChangedListener {
+            enableSubmitButton()
+        }
+        binding.etFoodItem.addTextChangedListener {
+            enableSubmitButton()
+        }
+        binding.spinnerDonorRating.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                enableSubmitButton()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
+        }
+        binding.spinnerFoodQuality.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                enableSubmitButton()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
+        }
+    }
+
+    private fun enableSubmitButton() {
+        val donorName = binding.etDonorName.text.toString().isNotEmpty()
+        val foodItem = binding.etFoodItem.text.toString().isNotEmpty()
+        val donorRating = binding.spinnerDonorRating.selectedItemPosition != 0
+        val foodQuality = binding.spinnerFoodQuality.selectedItemPosition != 0
+
+        binding.btnSubmitFeedback.isEnabled = donorName && foodItem && donorRating && foodQuality
     }
 
     private fun submitFeedback() {

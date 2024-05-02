@@ -5,6 +5,8 @@ import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -65,10 +67,48 @@ class Receive : Fragment(), OnMapReadyCallback {
         firebaseAuth = FirebaseAuth.getInstance()
         fStore = FirebaseFirestore.getInstance()
 
+        binding.searchButton.isEnabled = false
+        binding.searchButton.backgroundTintList = ContextCompat.getColorStateList(
+            requireContext(),
+            android.R.color.darker_gray
+        )
+
+        // Add a TextWatcher to the search text field
+        binding.searchText.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                // Enable the search button if there is text in the search field, otherwise disable it
+                binding.searchButton.isEnabled = !s.isNullOrBlank()
+                // Change button color based on text input
+                if (s.isNullOrBlank()) {
+                    binding.searchButton.backgroundTintList = ContextCompat.getColorStateList(
+                        requireContext(),
+                        android.R.color.darker_gray
+                    )
+                } else {
+                    // Change it back to the original color
+                    binding.searchButton.backgroundTintList = ContextCompat.getColorStateList(
+                        requireContext(),
+                        R.color.register
+                    )
+                }
+            }
+        })
+
         binding.searchButton.setOnClickListener {
             val searchQuery = binding.searchText.text.toString()
             searchDonationDetails(searchQuery)
         }
+
+        binding.submit.isEnabled = false
+
         binding.submit.setOnClickListener {
             val foodItem = binding.searchText.text.toString()
             val description = binding.descriptionText.text.toString()
@@ -97,6 +137,8 @@ class Receive : Fragment(), OnMapReadyCallback {
                         binding.expiryText.setText(expiry)
                     }
                 }
+
+                binding.submit.isEnabled = true // Enable submit button
             }
             .addOnFailureListener { exception ->
                 Log.d(TAG, "Error getting documents: ", exception)
