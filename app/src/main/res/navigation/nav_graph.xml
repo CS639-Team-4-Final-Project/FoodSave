@@ -52,12 +52,23 @@
             android:id="@+id/action_Dashboard_to_Rewards"
             app:destination="@id/Rewards" />
         <action
+            android:id="@+id/action_Dashboard_to_Feedback_on_Donor"
+            app:destination="@id/FeedbackForm" />
+        <action
             android:id="@+id/action_Dashboard_to_About_Us"
             app:destination="@id/About_Us" />
 
         <action
             android:id="@+id/action_Dashboard_to_FoodMap"
             app:destination="@id/FoodMap" />
+
+        <action
+            android:id="@+id/action_Dashboard_to_SignIn"
+            app:destination="@id/SignIn" />
+
+        <action
+            android:id="@+id/action_Dashboard_to_Contact_Us"
+            app:destination="@id/Contact_Us" />
     </fragment>
 
     <fragment
@@ -73,8 +84,11 @@
     <fragment
         android:id="@+id/Receive"
         android:name="com.example.foodsave.Receive"
-        android:label="@string/Receive"
-        tools:layout="@layout/donate_screen">
+        android:label="@string/Receive" >
+
+        <action
+            android:id="@+id/action_Receive_to_Dashboard"
+            app:destination="@id/Dashboard" />
     </fragment>
 
     <fragment
@@ -90,4 +104,19 @@
         android:label="@string/About_Us"
         tools:layout="@layout/about_us">
     </fragment>
+
+
+    <fragment
+        android:id="@+id/Contact_Us"
+        android:name="com.example.foodsave.Contact_Us"
+        android:label="@string/Contact_Us"
+        tools:layout="@layout/contact_us">
+    </fragment>
+
+    <activity
+        android:id="@+id/FeedbackForm"
+        android:name="com.example.foodsave.FeedbackForm"
+        android:label="@string/Feedback"
+        tools:layout="@layout/activity_feedback_form" />
+
 </navigation>

@@ -57,7 +57,9 @@ class SignUp : Fragment() {
                 val user = hashMapOf(
                     "name" to name,
                     "email" to email,
-                    "phone" to phone
+                    "phone" to phone,
+                    "userId" to userID,
+                    "rewards" to 0
                 )
                 documentReference.set(user)
                     .addOnSuccessListener {

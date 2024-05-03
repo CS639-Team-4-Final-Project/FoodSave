@@ -2,9 +2,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.foodsave.MainActivity">
+    <group android:id="@+id/group_logo"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/action_logo"
+            android:icon="@drawable/logo"
+            android:title="FoodSave"
+            app:showAsAction="always" />
+    </group>
+
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/logoutButton"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/action_logout"
         app:showAsAction="never" />
 </menu>

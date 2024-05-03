@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_Dashboard_to_SignIn" type="id" />
+    <item name="fragment_container" type="id" />
+    <item name="donor_name_spinner" type="id" />
+    <item name="food_item_spinner" type="id" />
+    <item name="rating_spinner" type="id" />
+    <item name="quality_spinner" type="id" />
+    <item name="submit_button" type="id" />
+    <item name="action_Dashboard_to_Feedback_on_Donor" type="id" />
+    <item name="action_Dashboard_to_FeedbackForm" type="id" />
+</resources>

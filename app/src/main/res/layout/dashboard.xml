@@ -3,16 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- Donate Button -->
     <Button
         android:id="@+id/Donate"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/Donate"
+        android:textSize="25sp"
         android:textAppearance="?attr/textAppearanceHeadline6"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/dashboard_buttons"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +24,9 @@
     <Button
         android:id="@+id/Receive"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/Receive"
+        android:textSize="25sp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@+id/Donate"
@@ -35,8 +38,9 @@
     <Button
         android:id="@+id/Food_Map"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/Food_Map"
+        android:textSize="25sp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@+id/Receive"
@@ -48,8 +52,9 @@
     <Button
         android:id="@+id/Rewards"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/Rewards"
+        android:textSize="25sp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@+id/Food_Map"
@@ -61,8 +66,9 @@
     <Button
         android:id="@+id/Feedback"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/Feedback"
+        android:textSize="25sp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@+id/Rewards"
@@ -74,8 +80,9 @@
     <Button
         android:id="@+id/About_Us"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/About_Us"
+        android:textSize="25sp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@+id/Feedback"
@@ -87,8 +94,9 @@
     <Button
         android:id="@+id/Contact_Us"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/Contact_Us"
+        android:textSize="25sp"
         android:textAppearance="?attr/textAppearanceHeadline6"
         android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@+id/About_Us"
