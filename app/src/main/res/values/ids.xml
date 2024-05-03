@@ -9,4 +9,5 @@
     <item name="submit_button" type="id" />
     <item name="action_Dashboard_to_Feedback_on_Donor" type="id" />
     <item name="action_Dashboard_to_FeedbackForm" type="id" />
+    <item name="action_to_SignIn" type="id" />
 </resources>

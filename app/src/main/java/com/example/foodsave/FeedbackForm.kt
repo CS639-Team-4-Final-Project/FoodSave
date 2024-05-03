@@ -1,12 +1,10 @@
 package com.example.foodsave
 
-import android.content.Intent
+
 import android.graphics.Color
-import android.graphics.Typeface
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
-import android.text.style.StyleSpan
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -15,21 +13,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import com.example.foodsave.databinding.ActivityFeedbackFormBinding
-import com.google.firebase.auth.FirebaseAuth
 import com.bumptech.glide.Glide
 
 class FeedbackForm : AppCompatActivity() {
     private lateinit var binding: ActivityFeedbackFormBinding
-    private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var imageUrl:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFeedbackFormBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        // Set up the Firebase Auth instance
-        firebaseAuth = FirebaseAuth.getInstance()
 
         setSupportActionBar(binding.toolbar)
 
@@ -89,7 +82,7 @@ class FeedbackForm : AppCompatActivity() {
             submitFeedback()
         }
 
-        // Enable the submit button when the user has filled out the form
+        // Enabled the submit button when the user has filled out the form
         binding.etDonorName.addTextChangedListener {
             enableSubmitButton()
         }
@@ -122,24 +115,9 @@ class FeedbackForm : AppCompatActivity() {
     }
 
     private fun submitFeedback() {
-        val donorName = binding.etDonorName.text.toString()
-        val foodItem = binding.etFoodItem.text.toString()
-        val donorRating = binding.spinnerDonorRating.selectedItemPosition
-        val foodQuality = binding.spinnerFoodQuality.selectedItemPosition
-
-        if (donorRating == 0) {
-            // "Choose from below" is selected for Donor Rating
-        }
-
-        if (foodQuality == 0) {
-            // "Choose from below" is selected for Food Quality
-        }
-
-        // Perform the necessary actions to submit the feedback
-        // You can use the `donorRating` and `foodQuality` values (which will be 0 if "Choose from below" is selected)
         Toast.makeText(this, "Feedback submitted successfully!", Toast.LENGTH_SHORT).show()
-
-        // Navigate back to the previous screen
         onBackPressed()
+
+
     }
 }

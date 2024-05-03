@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
     private fun logOutUser() {
         FirebaseAuth.getInstance().signOut()
         findNavController(R.id.nav_host_fragment_content_main)
-            .navigate(R.id.action_Dashboard_to_SignIn)
+            .navigate(R.id.action_to_SignIn)
 
         Toast.makeText(
             this,

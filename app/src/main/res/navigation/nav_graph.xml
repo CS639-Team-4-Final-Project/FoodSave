@@ -26,6 +26,10 @@
             android:id="@+id/action_SignIn_to_Dashboard"
             app:destination="@id/Dashboard" />
 
+        <action
+            android:id="@+id/action_to_SignIn"
+            app:destination="@id/SignIn" />
+
     </fragment>
 
     <fragment
@@ -36,6 +40,10 @@
     <action
         android:id="@+id/action_Dashboard_to_FoodMap"
         app:destination="@id/FoodMap" />
+
+        <action
+            android:id="@+id/action_to_SignIn"
+            app:destination="@id/SignIn" />
     </fragment>
     <fragment
         android:id="@+id/Dashboard"
@@ -69,6 +77,10 @@
         <action
             android:id="@+id/action_Dashboard_to_Contact_Us"
             app:destination="@id/Contact_Us" />
+
+        <action
+            android:id="@+id/action_to_SignIn"
+            app:destination="@id/SignIn" />
     </fragment>
 
     <fragment
@@ -79,6 +91,10 @@
         <action
             android:id="@+id/action_Donate_to_Dashboard"
             app:destination="@id/Dashboard" />
+
+        <action
+            android:id="@+id/action_to_SignIn"
+            app:destination="@id/SignIn" />
     </fragment>
 
     <fragment
@@ -89,6 +105,10 @@
         <action
             android:id="@+id/action_Receive_to_Dashboard"
             app:destination="@id/Dashboard" />
+
+        <action
+            android:id="@+id/action_to_SignIn"
+            app:destination="@id/SignIn" />
     </fragment>
 
     <fragment
@@ -96,6 +116,10 @@
         android:name="com.example.foodsave.Rewards"
         android:label="@string/Rewards"
         tools:layout="@layout/rewards">
+
+        <action
+            android:id="@+id/action_to_SignIn"
+            app:destination="@id/SignIn" />
     </fragment>
 
     <fragment
@@ -103,6 +127,10 @@
         android:name="com.example.foodsave.About_Us"
         android:label="@string/About_Us"
         tools:layout="@layout/about_us">
+
+        <action
+            android:id="@+id/action_to_SignIn"
+            app:destination="@id/SignIn" />
     </fragment>
 
 
@@ -111,6 +139,10 @@
         android:name="com.example.foodsave.Contact_Us"
         android:label="@string/Contact_Us"
         tools:layout="@layout/contact_us">
+
+        <action
+            android:id="@+id/action_to_SignIn"
+            app:destination="@id/SignIn" />
     </fragment>
 
     <activity
@@ -118,5 +150,7 @@
         android:name="com.example.foodsave.FeedbackForm"
         android:label="@string/Feedback"
         tools:layout="@layout/activity_feedback_form" />
+
+
 
 </navigation>
