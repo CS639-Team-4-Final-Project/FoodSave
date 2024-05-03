@@ -151,6 +151,33 @@ class Receive : Fragment(), OnMapReadyCallback {
 
         val userRef = fStore.collection("users").document(userID.toString())
 
+        fStore.collection("donateRecords")
+            .whereEqualTo("foodItem", foodItem)
+            .get()
+            .addOnSuccessListener { querySnapshot ->
+                if (!querySnapshot.isEmpty) {
+                    val document = querySnapshot.documents[0]
+                    val documentRef = document.reference
+
+                    val updateData = mapOf(
+                        "isAvailable" to false
+                    )
+
+                    documentRef.update(updateData)
+                        .addOnSuccessListener {
+                            Log.d(ContentValues.TAG, "Donation record updated")
+                        }
+                        .addOnFailureListener { e ->
+                            Log.e(ContentValues.TAG, "Error Updating Donation record: $e")
+                        }
+                } else {
+                    Log.e(ContentValues.TAG, "Donation record not found")
+                }
+            }
+            .addOnFailureListener { e ->
+                Log.e(ContentValues.TAG, "Error getting donation record: $e")
+            }
+
         userRef.get()
             .addOnSuccessListener { documentSnapshot ->
                 val receiver = documentSnapshot.get("name")}
@@ -159,7 +186,6 @@ class Receive : Fragment(), OnMapReadyCallback {
             "foodItem" to foodItem,
             "description" to description,
             "expiry" to expiry,
-            // "receiverName" to receiver,
             "userId" to userID
         )
 
