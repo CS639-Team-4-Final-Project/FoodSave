@@ -16,3 +16,17 @@ https://docs.google.com/document/d/1p_MULypPV1GwtT9ycAXt5ETMKdIyZ5uMoMVKL7KNQu0/
 
 **The link shows the basic workflow of the app:** 
 https://drive.google.com/file/d/1C3ykWg1HSSV7b2w08rpMQU8bs27s_yOG/view?usp=drive_link  
+
+## Technologies used:
+1.	Android Studio
+2.	Kotlin
+3.	Firebase
+4.	Google Map APIs
+
+## Key Features:
+### SignUp:
+Created a Material design-based signup screen with user details and then this data is stored in Firebase Database.
+
+### LoginPage:
+Created a Login Page with email id and Password which is authenticated from Firebase Authentication.
+
