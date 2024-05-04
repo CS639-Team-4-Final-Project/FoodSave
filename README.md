@@ -30,3 +30,13 @@ Created a Material design-based signup screen with user details and then this da
 ### LoginPage:
 Created a Login Page with email id and Password which is authenticated from Firebase Authentication.
 
+### Dashboard:
+⁠The Dashboard screen shows all the different buttons for the user to navigate to different screens like Donate, Receive, FoodMap, Rewards, feedback Form.
+
+### Donate Screen:
+The Donate screen would ask the user to provide details of the food item to be donated such as Name of the food, description, and expiry of the food item.
+This data is stored in the backend in Firebase database with the live location of the donor.
+
+### Food Map Screen:
+This screen would display the google map with Marker on the maps showing exact location and description of the product provided by the Donors.
+⁠It displays the live location of the user and displays the food data near to the live location of the user.
