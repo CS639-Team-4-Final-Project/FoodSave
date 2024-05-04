@@ -70,3 +70,7 @@ https://drive.google.com/file/d/1C3ykWg1HSSV7b2w08rpMQU8bs27s_yOG/view?usp=drive
 <img src="https://github.com/CS639-Team-4-Final-Project/FoodSave/assets/61057243/c8ab3c78-997c-4399-ae70-b5056578d4a8" width="180" height="350"> 
 
 To run the application locally; clone the repo and add your Google Map API key and connect to your firebase and run the app.
+
+$ git clone https://github.com/CS639-Team-4-Final-Project/FoodSave
+
+Firebase link: https://firebase.google.com/ 
