@@ -1,6 +1,9 @@
 # Team 4 - Food Waste Management
 
 # App: FoodSave
+<div align="left">
+  <img src="logo.png" width="150" height="150">
+</div>
 
 ## Team Members:
 1. Charitha Gangaraju
@@ -16,6 +19,9 @@ https://docs.google.com/document/d/1p_MULypPV1GwtT9ycAXt5ETMKdIyZ5uMoMVKL7KNQu0/
 
 **The link shows the basic workflow of the app:** 
 https://drive.google.com/file/d/1C3ykWg1HSSV7b2w08rpMQU8bs27s_yOG/view?usp=drive_link  
+
+**The link to the FInal Presentation:**
+https://paceuniversity-my.sharepoint.com/:p:/r/personal/cg98718n_pace_edu/Documents/Food%20Save%20Presentation.pptx?d=w7f03989b4fd045e5b2cfca1abf81fcae&csf=1&web=1&e=KFDtvz
 
 ## Technologies used:
 1.	Android Studio
